@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">    
+    
+  
+  <bean class="com.springcore.collection.Emp" name="Emp1">
+  <property name="name" value="prathamesh"></property>
+  <property name="numbers">
+  <list>
+  <value>809099</value>
+  <value>43243</value>
+  <value>"why"</value>
+  
+  </list>
+  
+  </property>
+  
+  <property name="Addresss">
+  <set>
+  <value>5654656</value>
+  <value> 723423</value>
+  <null> "this is null"</null>
+  </set>
+  </property>
+  
+  <property name="courses">
+   <map>
+   
+   <entry key="chat" value="gpt"></entry>
+   <entry key="this " value="we are goood human being"></entry>
+   
+   </map>
+  
+  
+  
+  </property>
+  
+  <property name="prop">
+  
+  <props>
+  <prop key="propganda" > this is property and we dont have to make it in a string</prop>
+  </props>
+  
+  
+  </property>
+  
+  
+  
+  </bean>
+</beans>

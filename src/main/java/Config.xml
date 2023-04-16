@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">    
+    
+   <!--  this is our beans -->    
+    <bean class="com.springcore.Student" name="student1">
+    	<property name="studentId">
+    		<value>22344</value>
+    	</property>    	
+    	<property name="studentName">
+    		<value>John</value>
+    	</property>
+    	
+    	<property name="studentAddress">
+    		<value>
+    			Bas
+    		</value>
+    	</property>
+    
+  
+     
+    
+    </bean>
+
+
+ <bean class="com.springcore.Student" name="student2">
+    	<property name="studentId" value="4343">
+    	</property>    	
+    	<property name="studentName" value="prathamesh">
+    		
+    	</property>
+    	
+    	<property name="studentAddress" value="deharadun">
+    	
+    	</property>
+    
+  
+     
+    
+    </bean>
+    
+   
+   
+    <bean class="com.springcore.Student" name="student3" p:studentId="7" p:studentName="prathamesh"  p:studentAddress="sangli"></bean>
+    
+    
+    <bean class="com.springcore.Teacher" name="teacher" p:number="3453">
+    
+     </bean>
+    
+    
+    
+</beans>
